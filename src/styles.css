@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@100;200;300;400;500;600&family=Anton&display=swap');
+/* @import 'styles/custom.css'; */
+/* @import 'styles/classes.css' layer; */
+
+/* @layer main { */
+@tailwind base;
+@tailwind components;
+/* } */
+
+.btn {
+    /* padding: 11px 21px; */
+    @apply
+    uppercase
+    text-dark
+    bg-white
+    inline-block
+    border
+    border-white
+    text-12
+    font-albert
+    font-medium
+    md:text-base
+    lg:text-xl
+    2xl:text-mobileh1
+    transition-all
+    px-4
+    py-2
+    md:px-8
+    md:py-2
+    xl:px-12
+    xl:py-4;
+}
+
+.btn:hover {
+    @apply
+    bg-dark
+    text-white
+    border
+    border-white;
+}
+
+.heading1 {
+    @apply text-mobileh1 
+    lg:text-4xl 
+    xl:text-6xl
+    2xl:text-desktoph2 
+    uppercase;
+}
+
+.description {
+    @apply 
+    text-14 
+    md:text-base
+    xl:text-lg
+    2xl:text-27 
+    font-albert 
+    font-extralight;
+}
+
+.heading4 {
+    @apply 
+    text-mobileh4 
+    font-albert 
+    font-bold 
+    uppercase 
+    md:text-xl
+    lg:text-2xl
+    2xl:text-desktoph4;
+}
+
+.vision-description {
+    @apply
+    text-mobileh3
+    md:text-2xl
+    lg:text-3xl
+    xl:text-5xl;
+}
+
+.copyright {
+    @apply 
+    font-thin 
+    text-8 
+    absolute 
+    md:text-10
+    right-mobilespacing 
+    lg:right-28
+    bottom-1;
+}
+
+.footer-link {
+    @apply 
+    text-10 
+    font-normal
+    md:text-base
+    2xl:text-navigation 
+    transition-all
+    uppercase;    
+}
+
+.footer-link:hover {
+    @apply text-primarylight;
+}
+
+.max-container {
+    @apply max-w-9xl mx-auto;
+}
+
+.about-solution {
+    @apply 
+    px-mobilespacing 
+    md:px-desktopspacing 
+    flex 
+    flex-col 
+    gap-5 
+    md:gap-8 
+    2xl:gap-12 
+    lg:flex-row;
+}
+
+.navmobile-container {
+    @apply 
+    fixed 
+    md:relative 
+    z-50 
+    text-end 
+    inset-0 
+    transition-all 
+    duration-500
+    translate-x-full
+    md:translate-x-0;
+}
+
+.link {
+    @apply
+    uppercase
+    transition-all;
+}
+
+.link.active {
+    @apply
+    text-primarylight;
+}
+
+.link:hover {
+    @apply
+    text-primarylight;
+}
+
+
+.ribbon {
+    @apply bg-primary;
+    width: 10px;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    top: 17%;
+    z-index: 10;
+}
+
+
+@tailwind utilities;
+
+
+
+
+
+body {
+    position: relative;
+    font-family: anton;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+@media only screen and (min-width: 640px) {
+    .ribbon {
+        top: 160px;
+    }
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .ribbon {
+        top: 25%;
+        width: 20px;
+        height: 200px;
+    }
+}
+
+@media only screen and (min-width: 1536px) {
+    .ribbon {
+        width: 50px;
+        top: 20%;
+        height: 315px;
+    }
+}

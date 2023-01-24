@@ -1,0 +1,9 @@
+.btn {
+    @apply
+    uppercase
+    text-dark
+    bg-white
+    inline-block
+    text-12
+    py-1 px-3;
+}
